@@ -6,13 +6,13 @@
 /*   By: szemmour <szemmour@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 11:16:11 by szemmour          #+#    #+#             */
-/*   Updated: 2024/11/18 18:51:40 by szemmour         ###   ########.fr       */
+/*   Updated: 2024/11/20 17:26:04 by szemmour         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-static int	ft_putpointer(uintptr_t value)
+static int	ft_putpointer(unsigned long value)
 {
 	int		len;
 	char	*hex;
@@ -29,7 +29,7 @@ static int	ft_putpointer(uintptr_t value)
 	return (len);
 }
 
-int	ft_putptr(uintptr_t value)
+int	ft_putptr(unsigned long value)
 {
 	int	len;
 
